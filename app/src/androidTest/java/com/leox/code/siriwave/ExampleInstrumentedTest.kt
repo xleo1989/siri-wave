@@ -1,4 +1,4 @@
-package com.leox.siriwave.siriwave
+package com.leox.code.siriwave
 
 import android.support.test.InstrumentationRegistry
 import android.support.test.runner.AndroidJUnit4

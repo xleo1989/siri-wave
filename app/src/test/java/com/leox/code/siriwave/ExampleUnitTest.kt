@@ -1,4 +1,4 @@
-package com.leox.siriwave.siriwave
+package com.leox.code.siriwave
 
 import org.junit.Test
 

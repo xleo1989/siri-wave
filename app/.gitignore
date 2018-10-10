@@ -1,5 +1,11 @@
 /build
 ../.idea
+/.idea
+.idea/
 .idea
 /gradle
 *.iml
+.idea/caches/build_file_checksums.ser
+.idea/gradle.xml
+.idea/misc.xml
+.idea/runConfigurations.xml

@@ -1,4 +1,4 @@
-package com.leox.siriwave;
+package com.leox.siriwave.siri_wave2;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -21,8 +21,6 @@ import android.support.annotation.RequiresApi;
 import android.util.AttributeSet;
 import android.util.Pair;
 import android.view.View;
-
-import com.leox.siriwave.siriwave.R;
 
 public class WaveView extends View {
 //    public static final String TAG = "WaveView";
