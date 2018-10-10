@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.baize.ai.base.WaveView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/waveview"
+        android:layout_width="match_parent"
+        android:layout_height="33dp"
+        android:layout_marginTop="22dp"
+        android:visibility="visible"
+        app:amplitude="0.6"
+        app:amplitudeFactor="0.5"
+        app:autoStart="true"
+        app:speed="0.1"
+        app:standByAmplitude="0.2" />
+
+</android.support.constraint.ConstraintLayout>

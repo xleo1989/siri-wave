@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="WaveView">
+        <attr name="speed" format="float" />
+        <attr name="autoStart" format="boolean" />
+        <attr name="amplitude" format="float" />
+        <attr name="amplitudeFactor" format="float"/>
+        <attr name="standByAmplitude" format="float"/>
+        <attr name="ratio" format="float"/>
+        <attr name="frequency" format="float"/>
+    </declare-styleable>
+</resources>
