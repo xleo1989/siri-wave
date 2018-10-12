@@ -212,7 +212,7 @@ public class WaveView extends View {
         isRunning = true;
     }
 
-    //平滑变化
+    //平滑变化 （amplitude 或 speed 变化时）
     private void interpolate() {
 //        Log.i(TAG, "interpolate: ");
         //speed
@@ -302,6 +302,9 @@ public class WaveView extends View {
     public static final int CREATE_PATH = 0x10fc;
     public static final int CLEAR_CURVE = 0x11ee;
 
+    /**
+     * 单个curve图像
+     */
     class WaveCurve {
         private double seed = 0.001;
         private double openClass;
@@ -328,6 +331,7 @@ public class WaveView extends View {
         }
 
         /**
+         * 创建单个curve
          * @param m 1 || -1
          */
         private Pair<Path, Shader> drawLine(double m) {
@@ -367,6 +371,9 @@ public class WaveView extends View {
             return y;
         }
 
+        /**
+         * 重置随机参数
+         */
         private void respawn() {
 //            Log.i(TAG, "respawn: obj==" + this.toString());
             this.amplitude = 0.3 + Math.random() * 0.7;
@@ -374,7 +381,12 @@ public class WaveView extends View {
             this.openClass = 2 + Math.random() * 3;
         }
 
-
+        /**
+         * 创建当前curve对应得RadialGradient（放射渐变效果）
+         * @param x_base
+         * @param y_base
+         * @return
+         */
         private Shader createShader(float x_base, float y_base) {
 //            Log.i(TAG, "createShader: ");
             float radius = 1.45f * (float) Math.abs(equation(0));
